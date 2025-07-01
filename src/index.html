@@ -279,9 +279,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-32 bg-boho-sand">
+    <section class="py-32 pt-24 bg-boho-sand">
       <div class="max-w-7xl mx-auto px-6 sm:px-12">
-        <div class="grid lg:grid-cols-2 gap-20 items-start">
+                        <div class="grid lg:grid-cols-2 gap-20 items-start">
           
           <!-- Contact Info -->
           <div class="animate-slide-in-left">
@@ -300,43 +300,49 @@
                 Ma–Pe 7:00–14:00
               </div>
             </div>
+          </div>
 
-            <!-- Staff -->
-            <div>
-              <h3 class="text-boho-olive text-sm uppercase tracking-wider mb-8 font-medium">Henkilöstö</h3>
+          <!-- Staff -->
+          <div class="animate-slide-in-right">
+            <h2 class="text-4xl sm:text-5xl font-light text-boho-warm-brown mb-12 opacity-0">
+              Henkilöstö
+            </h2>
+            
+            <div class="mb-12">
+              <h3 class="text-boho-olive text-sm uppercase tracking-wider mb-6 font-medium">Henkilöstö</h3>
               
-              <div class="space-y-8">
+              <div class="grid grid-cols-3 gap-6">
                 <div class="group">
-                  <h4 class="text-2xl font-medium text-boho-warm-brown mb-3 group-hover:text-boho-terracotta transition-colors duration-300">Hannu Lammi</h4>
+                  <h4 class="text-xl font-medium text-boho-warm-brown mb-3 group-hover:text-boho-terracotta transition-colors duration-300">Hannu Lammi</h4>
                   <div class="space-y-2">
-                    <a href="tel:0504711818" class="contact-link block text-boho-terracotta hover:text-boho-warm-brown transition-colors text-lg font-medium">
+                    <a href="tel:0504711818" class="contact-link block text-boho-terracotta hover:text-boho-warm-brown transition-colors font-medium">
                       050 471 1818
                     </a>
-                    <a href="mailto:hannu.lammi@meratilit.fi" class="contact-link block text-boho-olive hover:text-boho-warm-brown transition-colors">
+                    <a href="mailto:hannu.lammi@meratilit.fi" class="contact-link block text-boho-olive hover:text-boho-warm-brown transition-colors text-sm">
                       hannu.lammi@meratilit.fi
                     </a>
                   </div>
                 </div>
                 
                 <div class="group">
-                  <h4 class="text-2xl font-medium text-boho-warm-brown mb-3 group-hover:text-boho-terracotta transition-colors duration-300">Johanna Lammi</h4>
+                  <h4 class="text-xl font-medium text-boho-warm-brown mb-3 group-hover:text-boho-terracotta transition-colors duration-300">Johanna Lammi</h4>
                   <div class="space-y-2">
-                    <a href="tel:0407568122" class="contact-link block text-boho-terracotta hover:text-boho-warm-brown transition-colors text-lg font-medium">
+                    <a href="tel:0407568122" class="contact-link block text-boho-terracotta hover:text-boho-warm-brown transition-colors font-medium">
                       040 756 8122
                     </a>
-                    <a href="mailto:johanna.lammi@meratilit.fi" class="contact-link block text-boho-olive hover:text-boho-warm-brown transition-colors">
+                    <a href="mailto:johanna.lammi@meratilit.fi" class="contact-link block text-boho-olive hover:text-boho-warm-brown transition-colors text-sm">
                       johanna.lammi@meratilit.fi
                     </a>
                   </div>
                 </div>
                 
                 <div class="group">
-                  <h4 class="text-2xl font-medium text-boho-warm-brown mb-3 group-hover:text-boho-terracotta transition-colors duration-300">Juuso Lammi</h4>
+                  <h4 class="text-xl font-medium text-boho-warm-brown mb-3 group-hover:text-boho-terracotta transition-colors duration-300">Juuso Lammi</h4>
                   <div class="space-y-2">
-                    <a href="tel:0407701055" class="contact-link block text-boho-terracotta hover:text-boho-warm-brown transition-colors text-lg font-medium">
+                    <a href="tel:0407701055" class="contact-link block text-boho-terracotta hover:text-boho-warm-brown transition-colors font-medium">
                       040 770 1055
                     </a>
-                    <a href="mailto:juuso.lammi@meratilit.fi" class="contact-link block text-boho-olive hover:text-boho-warm-brown transition-colors">
+                    <a href="mailto:juuso.lammi@meratilit.fi" class="contact-link block text-boho-olive hover:text-boho-warm-brown transition-colors text-sm">
                       juuso.lammi@meratilit.fi
                     </a>
                   </div>
@@ -345,36 +351,6 @@
             </div>
           </div>
 
-          <!-- Contact Form -->
-          <div class="animate-slide-in-right">
-            <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 class="text-2xl font-medium text-boho-warm-brown mb-8">
-                Lähetä viesti
-              </h3>
-              
-              <form class="space-y-6" netlify>
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label for="name" class="block text-boho-olive text-sm font-medium mb-2">Nimi</label>
-                    <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 border border-boho-sage/30 rounded-lg focus:ring-2 focus:ring-boho-sage focus:border-transparent outline-none transition-colors">
-                  </div>
-                  <div>
-                    <label for="email" class="block text-boho-olive text-sm font-medium mb-2">Sähköposti</label>
-                    <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 border border-boho-sage/30 rounded-lg focus:ring-2 focus:ring-boho-sage focus:border-transparent outline-none transition-colors">
-                  </div>
-                </div>
-                
-                <div>
-                  <label for="message" class="block text-boho-olive text-sm font-medium mb-2">Viesti</label>
-                  <textarea id="message" name="message" rows="4" class="form-input w-full px-4 py-3 border border-boho-sage/30 rounded-lg focus:ring-2 focus:ring-boho-sage focus:border-transparent outline-none transition-colors resize-none"></textarea>
-                </div>
-                
-                <button type="submit" class="w-full bg-boho-terracotta hover:bg-boho-warm-brown text-white font-medium py-4 px-6 rounded-lg transition-all duration-300 hover:transform hover:-translate-y-0.5 hover:shadow-md">
-                  Lähetä viesti
-                </button>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -383,7 +359,7 @@
     <footer class="bg-boho-warm-brown text-boho-cream py-12">
       <div class="max-w-7xl mx-auto px-6 sm:px-12 text-center">
         <p class="text-sm opacity-80 hover:opacity-100 transition-opacity duration-300">
-          © 2024 Hämeen Mera-Tilit Oy
+          © 2025 Hämeen Mera-Tilit Oy
         </p>
       </div>
     </footer>
