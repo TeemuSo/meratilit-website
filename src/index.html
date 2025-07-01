@@ -193,6 +193,48 @@
       .star-icon:hover {
         transform: scale3d(1.1, 1.1, 1);
       }
+      
+      /* Service card entry animations */
+      .service-card-animate {
+        opacity: 0;
+        animation: serviceCardEntry 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+      
+      .service-card-animate:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      
+      .service-card-animate:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+      
+      .service-card-animate:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      
+      @keyframes serviceCardEntry {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 40px, 0) scale3d(0.95, 0.95, 1);
+        }
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        }
+      }
+      
+      /* Enhanced service card hover with subtle shadow animation */
+      .service-card {
+        will-change: transform, box-shadow;
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+      }
+      
+      .service-card:hover {
+        transform: translate3d(0, -2px, 0);
+        box-shadow: 0 8px 25px rgba(156, 175, 136, 0.15);
+      }
     </style>
   </head>
   <body class="bg-boho-cream font-inter antialiased">
@@ -275,7 +317,7 @@
         </div>
         
         <div class="grid md:grid-cols-3 gap-12">
-          <div class="service-card text-center group bg-white rounded-2xl p-8 hover:bg-white">
+          <div class="service-card service-card-animate text-center group bg-white rounded-2xl p-8 hover:bg-white">
             <div class="service-icon w-20 h-20 bg-boho-sage/20 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-boho-sage/30 transition-colors duration-300">
               <svg class="w-10 h-10 text-boho-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -287,7 +329,7 @@
             </p>
           </div>
           
-          <div class="service-card text-center group bg-white rounded-2xl p-8 hover:bg-white">
+          <div class="service-card service-card-animate text-center group bg-white rounded-2xl p-8 hover:bg-white">
             <div class="service-icon w-20 h-20 bg-boho-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-boho-terracotta/30 transition-colors duration-300">
               <svg class="w-10 h-10 text-boho-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
@@ -299,7 +341,7 @@
             </p>
           </div>
           
-          <div class="service-card text-center group bg-white rounded-2xl p-8 hover:bg-white">
+          <div class="service-card service-card-animate text-center group bg-white rounded-2xl p-8 hover:bg-white">
             <div class="service-icon w-20 h-20 bg-boho-dusty-rose/20 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-boho-dusty-rose/30 transition-colors duration-300">
               <svg class="w-10 h-10 text-boho-dusty-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
